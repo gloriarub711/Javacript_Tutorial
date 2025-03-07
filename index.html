@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrolling Animation with p5.js</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handsfree"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body style="height: 2000px;">
 
-    
+    <header>
+        <h1>Scrolling Animation <br> Parallax effect Javascript Tutorial</h1>
+        <h4>In this tutorial, we will explain the functionality and usability of this Javascript effect</h4>
+    </header>
+
+    <div class="wave-container">
+        <h1 class="wave-text">
+            <span>S</span><span>c</span><span>r</span><span>o</span><span>l</span><span>l</span><span>d</span><span>o</span><span>w</span><span>n</span>
+        </h1>
+    </div>
+
+    <div class="image-container">
+        <div class="image-column">
+            <img src="html.JPG" alt="Image 1">
+        </div>
+
+        <div class="image-column">
+            <img src="css.JPG" alt="Image 2">
+        </div>
+
+        <div class="image-column">
+            <img src="javascript.JPG" alt="Image 3">
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="column">
+            <p>
+                I love how this design turned out because it’s not just about looking good but about creating a seamless experience for users. The way everything flows together makes it easy to navigate, but still keeps it fun with some interactive elements. The wave animation gives the page a bit of personality, and it’s simple but engaging enough to keep the user hooked.
+            </p>
+        </div>
+
+        <div class="column">
+            <p>
+                This function is not only a cool visual but can be used in a lot of creative ways. For instance, it could be used on a landing page to grab attention, or even in a portfolio to highlight a key message. You could use this effect for call-to-action buttons to make them stand out, or even on a product page to add a fun, interactive element that keeps users engaged while they scroll. The possibilities are endless, and it’s the kind of design that makes the user feel like they’re part of the experience, not just passively observing.
+            </p>
+        </div>
+
+        <div class="column">
+            <p>
+                The reason I wanted to play around with JavaScript in the first place is because, while working on my own personal portfolio and seeing my friends work on theirs too, I came to realize that we’re always looking for ways to make our websites stand out, making them more fun and engaging. I’ve always been into working with interactions and animation because they really bring designs to life. There’s something interesting about taking a static page and making it feel dynamic, like it’s actually responding to the user. It’s about creating an experience that feels effortless and natural. <br> Try to refresh the page, each time you do so the bubbles change positions!
+            </p>
+        </div>
+    </div>
+
 </body>
+
 </html>

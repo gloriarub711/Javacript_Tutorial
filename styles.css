@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2000px;
+    margin: 0;
+    background: #101010;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.wave-container {
+    text-align: center; /* Center the wave text */
+    margin-top: 20px; /* Add space below the header */
+    color: #ffc0cb;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.2s; }
+.wave-text span:nth-child(3) { animation-delay: 0.4s; }
+.wave-text span:nth-child(4) { animation-delay: 0.6s; }
+.wave-text span:nth-child(5) { animation-delay: 0.8s; }
+.wave-text span:nth-child(6) { animation-delay: 1s; }
+.wave-text span:nth-child(7) { animation-delay: 1.2s; }
+.wave-text span:nth-child(8) { animation-delay: 1.4s; }
+.wave-text span:nth-child(9) { animation-delay: 1.6s; }
+.wave-text span:nth-child(10) { animation-delay: 1.8s; }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between columns */
+    margin: 40px auto; /* Centers the container and adds top/bottom margin */
+    padding: 20px;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-column img {
+    width: 100%; /* Adjusts image to fill the column */
+    height: auto; /* Keeps image's aspect ratio */
+    border-radius: 10px; /* Adds rounded corners for aesthetics */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition for hover effect */
+}
+
+.image-column img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.column {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
